@@ -5,8 +5,7 @@
     "build": "lerna run tsc",
     "test": "jest",
     "prepare": "npm run build",
-    "prepublishOnly": "npm test",
-    "postversion": "git push && git push --tags"
+    "prepublishOnly": "npm test"
   },
   "devDependencies": {
     "@types/jest": "^24.0.19",
