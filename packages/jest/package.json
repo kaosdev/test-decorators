@@ -1,0 +1,35 @@
+{
+  "name": "@test-decorators/jest",
+  "version": "0.1.0",
+  "description": "Jest adapter for test decorators",
+  "author": "kaosdev <elialotti.dev@gmail.com>",
+  "homepage": "https://github.com/kaosdev/test-decorators#readme",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaosdev/test-decorators.git"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/kaosdev/test-decorators/issues"
+  },
+  "devDependencies": {
+    "@test-decorators/core": "0.1.0"
+  },
+  "peerDependencies": {
+    "@test-decorators/core": "0.1.0",
+    "jest": "^24.9.0"
+  }
+}

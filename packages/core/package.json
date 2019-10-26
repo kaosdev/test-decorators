@@ -1,0 +1,28 @@
+{
+  "name": "@test-decorators/core",
+  "version": "0.1.0",
+  "description": "Typescript decorators for developing framework agnostic tests",
+  "author": "kaosdev <elialotti.dev@gmail.com>",
+  "homepage": "https://github.com/kaosdev/test-decorators#readme",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaosdev/test-decorators.git"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "test": "echo \\\"Error: run __tests__ from root\\\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/kaosdev/test-decorators/issues"
+  }
+}

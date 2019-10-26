@@ -1,7 +1,19 @@
 {
   "name": "root",
   "private": true,
+  "scripts": {
+    "build": "lerna run tsc",
+    "test": "jest",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test",
+    "postversion": "git push && git push --tags"
+  },
   "devDependencies": {
-    "lerna": "^3.18.1"
-  }
+    "@types/jest": "^24.0.19",
+    "jest": "^24.9.0",
+    "lerna": "^3.18.1",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.6.4"
+  },
+  "dependencies": {}
 }
