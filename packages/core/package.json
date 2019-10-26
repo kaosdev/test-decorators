@@ -1,6 +1,6 @@
 {
   "name": "@test-decorators/core",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Typescript decorators for developing framework agnostic tests",
   "author": "kaosdev <elialotti.dev@gmail.com>",
   "homepage": "https://github.com/kaosdev/test-decorators#readme",
