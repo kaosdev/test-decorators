@@ -15,6 +15,14 @@ export class JestSuiteFactory extends SuiteFactory {
       suite.tests.forEach(test => {
         it(test.name, target[test.key].bind(target));
       });
+
+      suite.afterEachList.forEach(afe => {
+        afterEach(target[afe.key].bind(target));
+      });
+
+      suite.afterAllList.forEach(afe => {
+        afterAll(target[afe.key].bind(target));
+      });
     });
   }
 }
