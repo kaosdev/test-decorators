@@ -1,5 +1,5 @@
 import {SuiteBeforeAll} from "../models/suite";
-import {SuiteTarget} from "../suite-decorator.builder";
+import {SuiteTarget} from "../core/suite-decorator.builder";
 import {DecoratorFactory} from "./decorator.factory";
 
 export function BeforeAll() {

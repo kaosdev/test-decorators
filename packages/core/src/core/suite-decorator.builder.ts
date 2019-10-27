@@ -1,6 +1,6 @@
-import {Constructor} from "./types";
-import {SuiteFactory} from "./factories/suite.factory";
-import {Suite} from "./models";
+import {Constructor} from "../types";
+import {SuiteFactory} from "./suite.factory";
+import {Suite} from "../models";
 
 export type SuiteDecorator = (name?: string) => ClassDecorator;
 

@@ -1,4 +1,4 @@
-import {SuiteTarget} from "../suite-decorator.builder";
+import {SuiteTarget} from "../core/suite-decorator.builder";
 import {Suite} from "../models";
 
 export type SuiteMethodDecorator = (target: Partial<SuiteTarget>, key: string) => void;
