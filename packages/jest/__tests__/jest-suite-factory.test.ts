@@ -100,8 +100,89 @@ describe('Jest Suite Factory', () => {
     expect(afterAll).toHaveBeenCalledWith(expect.any(Function));
   });
 
+  it('should bind it function to target', () => {
+    @Jest()
+    class MyTest {
+      prop = true;
+
+      @It() setup() {
+        return this.prop;
+      }
+    }
+
+    callDescribe();
+
+    expectFunctionReturnValue(it).toBeTruthy();
+  });
+
+  it('should bind before each function to target', () => {
+    @Jest()
+    class MyTest {
+      prop = true;
+
+      @BeforeEach() setup() {
+        return this.prop;
+      }
+    }
+
+    callDescribe();
+
+    expectFunctionReturnValue(beforeEach).toBeTruthy();
+  });
+
+  it('should bind before all function to target', () => {
+    @Jest()
+    class MyTest {
+      prop = true;
+
+      @BeforeAll() setup() {
+        return this.prop;
+      }
+    }
+
+    callDescribe();
+
+    expectFunctionReturnValue(beforeAll).toBeTruthy();
+  });
+
+  it('should bind after each function to target', () => {
+    @Jest()
+    class MyTest {
+      prop = true;
+
+      @AfterEach() setup() {
+        return this.prop;
+      }
+    }
+
+    callDescribe();
+
+    expectFunctionReturnValue(afterEach).toBeTruthy();
+  });
+
+  it('should bind after all function to target', () => {
+    @Jest()
+    class MyTest {
+      prop = true;
+
+      @AfterAll() setup() {
+        return this.prop;
+      }
+    }
+
+    callDescribe();
+
+    expectFunctionReturnValue(afterAll).toBeTruthy();
+  });
+
   function callDescribe(index = 0): void {
     (describe as any as jest.Mock).mock.calls[index][1]();
+  }
+
+  function expectFunctionReturnValue(mock: any, index = 0) {
+    const fn: Function = (mock as jest.Mock).mock.calls[index]
+      .find((f: any) => typeof f === 'function');
+    return expect(fn());
   }
 });
 
