@@ -25,6 +25,9 @@
   "bugs": {
     "url": "https://github.com/kaosdev/test-decorators/issues"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@test-decorators/core": "^0.1.4"
   },
