@@ -4,7 +4,7 @@
   "description": "Typescript decorators for developing framework agnostic tests",
   "author": "kaosdev <elialotti.dev@gmail.com>",
   "homepage": "https://github.com/kaosdev/test-decorators#readme",
-  "license": "ISC",
+  "license": "MIT",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [

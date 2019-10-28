@@ -4,7 +4,7 @@
   "description": "Jest adapter for test decorators",
   "author": "kaosdev <elialotti.dev@gmail.com>",
   "homepage": "https://github.com/kaosdev/test-decorators#readme",
-  "license": "ISC",
+  "license": "MIT",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "directories": {
