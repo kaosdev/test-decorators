@@ -1,6 +1,6 @@
 {
   "name": "@test-decorators/jest",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Jest adapter for test decorators",
   "author": "kaosdev <elialotti.dev@gmail.com>",
   "homepage": "https://github.com/kaosdev/test-decorators#readme",
@@ -29,7 +29,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@test-decorators/core": "^0.1.4"
+    "@test-decorators/core": "^0.1.5"
   },
   "peerDependencies": {
     "@test-decorators/core": "0.1.0",
