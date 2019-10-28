@@ -19,7 +19,7 @@
 To work with decorators you need to install the core package and a framework adapter package.
 ```
 npm install @test-decorators/core
-npm install @test-decorators/<framework-name> # for 
+npm install @test-decorators/<framework-name>
 ```
 
 ### Example Usage (with jest)
