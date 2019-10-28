@@ -10,4 +10,4 @@ npm install @test-decorators/core
 yarn add @test-decorators/core
 ```
 
-> For oder guidance refer to the root [README](../../README.md)
+> For oder guidance refer to the root [README](https://github.com/kaosdev/test-decorators#readme)

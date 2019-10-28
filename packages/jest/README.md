@@ -12,4 +12,4 @@ npm install @test-decorators/jest
 yarn add @test-decorators/jest
 ```
 
-> For oder guidance refer to the root [README](../../README.md)
+> For oder guidance refer to the root [README](https://github.com/kaosdev/test-decorators#readme)
