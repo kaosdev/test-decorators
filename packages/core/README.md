@@ -1,11 +1,13 @@
-# `core`
+# @test-decorators/core
 
-> TODO: description
-
-## Usage
+## Installation
 
 ```
-const core = require('core');
+# with npm
+npm install @test-decorators/core
 
-// TODO: DEMONSTRATE API
+# or yarn
+yarn add @test-decorators/core
 ```
+
+> For oder guidance refer to the root [README](../../README.md)

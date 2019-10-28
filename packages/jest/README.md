@@ -1,11 +1,15 @@
-# `jest`
+# @test-decorators/jest
 
-> TODO: description
+[Jest](https://github.com/facebook/jest) adapter for test decorators
 
-## Usage
+## Installation
 
 ```
-const jest = require('jest');
+# with npm
+npm install @test-decorators/jest
 
-// TODO: DEMONSTRATE API
+# or yarn
+yarn add @test-decorators/jest
 ```
+
+> For oder guidance refer to the root [README](../../README.md)
