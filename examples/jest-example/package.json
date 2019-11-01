@@ -1,0 +1,34 @@
+{
+  "name": "jest-example",
+  "version": "0.1.5",
+  "private": true,
+  "description": "> TODO: description",
+  "author": "kaosdev <elialotti.dev@gmail.com>",
+  "homepage": "https://github.com/kaosdev/test-decorators#readme",
+  "license": "ISC",
+  "main": "lib/jest-example.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaosdev/test-decorators.git"
+  },
+  "scripts": {
+    "examples": "jest",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/kaosdev/test-decorators/issues"
+  },
+  "dependencies": {
+    "@test-decorators/core": "^0.1.5",
+    "@test-decorators/jest": "^0.1.5",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0"
+  }
+}
