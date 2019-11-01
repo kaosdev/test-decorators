@@ -1,6 +1,6 @@
 {
   "name": "jest-example",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "private": true,
   "description": "> TODO: description",
   "author": "kaosdev <elialotti.dev@gmail.com>",
@@ -26,8 +26,8 @@
     "url": "https://github.com/kaosdev/test-decorators/issues"
   },
   "dependencies": {
-    "@test-decorators/core": "^0.1.5",
-    "@test-decorators/jest": "^0.1.5",
+    "@test-decorators/core": "^0.2.0",
+    "@test-decorators/jest": "^0.2.0",
     "jest": "^24.9.0",
     "ts-jest": "^24.1.0"
   }
