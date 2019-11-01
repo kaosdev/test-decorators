@@ -14,12 +14,8 @@ export abstract class SuiteOperation {
   constructor(
     public name: string,
     public key: string,
-    public params: any[] = [],
+    public params?: any,
   ) {
-  }
-
-  execute(target: any): any {
-    return target[this.key](...this.params);
   }
 }
 

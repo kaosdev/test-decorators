@@ -16,22 +16,7 @@ describe('@Parametrized', () => {
     });
 
     const test = target.suite.tests[0];
-    expect(test.execute(target)).toEqual(1);
-  });
-  test('should create a test with source parameter', async () => {
-    const [target] = await buildDecorators((Suite: SuiteDecorator) => {
-      @Suite()
-      class MyTest {
-        @Parametrized({
-          source: [1]
-        }) 'test'(param: number) {
-          return param;
-        }
-      }
-    });
-
-    const test = target.suite.tests[0];
-    expect(test.execute(target)).toEqual(1);
+    expect(target[test.key](test.params)).toEqual(1);
   });
 
   test('should create a test with source parameter array', async () => {
@@ -49,7 +34,7 @@ describe('@Parametrized', () => {
     });
 
     const test = target.suite.tests[0];
-    expect(test.execute(target)).toEqual(['hello', 1]);
+    expect(target[test.key](test.params)).toEqual(['hello', 1]);
   });
 
   test('should create tests based on source parameters', async () => {
@@ -65,9 +50,9 @@ describe('@Parametrized', () => {
     });
 
     const [test1, test2, test3] = target.suite.tests;
-    expect(test1.execute(target)).toEqual(1);
-    expect(test2.execute(target)).toEqual(2);
-    expect(test3.execute(target)).toEqual(3);
+    expect(target[test1.key](test1.params)).toEqual(1);
+    expect(target[test2.key](test2.params)).toEqual(2);
+    expect(target[test3.key](test3.params)).toEqual(3);
   });
 
   test('should set tests name based on iteration', async () => {

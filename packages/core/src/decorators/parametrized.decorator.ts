@@ -14,7 +14,7 @@ export function Parametrized<T>(config: ParametrizedConfig<T>) {
       target.suite.tests = [
         ...target.suite.tests,
         ...config.source.map((params, index) =>
-          new SuiteTest(nameFn(params, index, key), key, [params])),
+          new SuiteTest(nameFn(params, index, key), key, params)),
       ];
     }
   );

@@ -5,6 +5,7 @@ import {
   BeforeAll,
   BeforeEach,
   It,
+  Parametrized,
   SuiteDecorator,
   SuiteDecoratorBuilder
 } from "@test-decorators/core";
@@ -173,6 +174,20 @@ describe('Jest Suite Factory', () => {
     callDescribe();
 
     expectFunctionReturnValue(afterAll).toBeTruthy();
+  });
+
+  it('should pass parameter to parametrized tests', () => {
+    @Jest()
+    class MyTest {
+      @Parametrized({source: [1, 2]}) test(param: number) {
+        return param;
+      }
+    }
+
+    callDescribe();
+
+    expectFunctionReturnValue(it, 0).toBe(1);
+    expectFunctionReturnValue(it, 1).toBe(2);
   });
 
   function callDescribe(index = 0): void {
